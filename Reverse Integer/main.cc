@@ -9,6 +9,7 @@ public:
 
 
 int main()
-{
+{   int num = 432;
     std::cout<<"Reverse Integer Program"<<std::endl;
+
 }
