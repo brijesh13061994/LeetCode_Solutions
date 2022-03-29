@@ -8,18 +8,27 @@ public:
     Solution(int x){
         num=x;
     }
+    
     int reverse() {
         cout<<"Reversing the number"<<endl;
         int temp,s1,rnum=0;   
         bool first=false;
-        if(num>0)
+        if(num == 0 || num== INT32_MAX || num == INT32_MIN){
+            num=0;
+            return 0;
+        }
+        else if(num>0)
             temp=num;
         else if(num<0)
             temp=num * (-1);
-        else if(num = 0)
-            return 0;
+        
         while(temp>0)
         {
+            if (rnum>INT32_MAX/10)
+            {
+                num=0;
+                return 0;
+            }
             rnum=rnum*10 + temp%10;
             if(!first)
                 s1=temp%10;
@@ -37,8 +46,8 @@ public:
         else
             num=rnum*(-1);
         return num;
+        
     }
-    public:
     void print() {
         cout<<"Number value is "<<num<<endl;
     }
@@ -48,7 +57,7 @@ public:
 int main()
 {   int num = INT32_MAX;
     Solution obj(num);
-    cout<<"Reverse Integer Program sizeof(INT) = "<<sizeof(int)<<endl;
+    cout<<"Reverse Integer Program sizeof(INT)  = "<<sizeof(int)<<" "<<INT32_MAX<<" "<<INT32_MIN<<endl;
     obj.print();
     obj.reverse();
     obj.print();
