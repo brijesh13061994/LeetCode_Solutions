@@ -2,14 +2,12 @@
 #include <string.h>
 using namespace std;
 
-class Solution
-{
+class Solution {
 public:
-    int myAtoi(string s)
+int myAtoi(string s)
     {
         int len = s.length();
         bool NegFlag = false, SignFlag = false, NumFlag = false;
-
         int num = 0;
 
         for (int i = 0; i < len; i++)
@@ -19,15 +17,13 @@ public:
                 if (s[i] >= '0' && s[i] <= '9')
                 {
                     NumFlag = true;
-
-                    if (num > INT32_MAX / 10)
+                    if (num >= INT32_MAX / 10)
                     {
                         if (NegFlag)
                             return INT32_MIN;
                         else
                             return INT32_MAX;
                     }
-
                     num = num * 10 + s[i] - '0';
                 }
                 else if (s[i] == '-' && !SignFlag)
@@ -35,7 +31,6 @@ public:
                     SignFlag = true;
                     NegFlag = true;
                 }
-
                 else if (s[i] == '+' && !SignFlag)
                 {
                     SignFlag = true;
