@@ -1,7 +1,5 @@
 #include <iostream>
 using namespace std;
-
-
 class Solution {
     int num;
 public:
@@ -44,7 +42,6 @@ public:
         cout<<"Number value is "<<num<<endl;
     }
 };
-
 
 int main()
 {   int num = -123;
