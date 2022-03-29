@@ -24,11 +24,8 @@ public:
         while(temp>0)
         {
             rnum=rnum*10 + temp%10;
-
             if(!first)
                 s1=temp%10;
-
-
             temp/=10;
         }
 
@@ -42,7 +39,6 @@ public:
             num=rnum;
         else
             num=rnum*(-1);
-
         return num;
     }
     public:
@@ -56,12 +52,7 @@ int main()
 {   int num = INT32_MAX;
     Solution obj(num);
     cout<<"Reverse Integer Program sizeof(INT) = "<<sizeof(int)<<endl;
-
-
     obj.print();
-
     obj.reverse();
-
     obj.print();
-
 }
