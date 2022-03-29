@@ -10,15 +10,14 @@ public:
     int reverse() {
         cout<<"Reversing the number"<<endl;
         int temp=0,rnum=0;
-        if(num == 0 || num== INT32_MAX || num == INT32_MIN){
+        if(num == 0 || num == INT32_MAX || num == INT32_MIN){
             num=0;
             return 0;
         }
         else if(num>0)
             temp=num;
         else if(num<0)
-            temp=num * (-1);
-        
+            temp = num * (-1);
         while(temp>0)
         {
             if (rnum>INT32_MAX/10)
@@ -29,14 +28,12 @@ public:
             rnum=rnum*10 + temp%10;
             temp/=10;
         }
-
-
         if(num>0)
             num=rnum;
         else
             num=rnum*(-1);
+            
         return num;
-        
     }
     void print() {
         cout<<"Number value is "<<num<<endl;
