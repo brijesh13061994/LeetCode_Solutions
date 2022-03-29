@@ -11,8 +11,7 @@ public:
     
     int reverse() {
         cout<<"Reversing the number"<<endl;
-        int temp,s1,rnum=0;   
-        bool first=false;
+        int temp=0,rnum=0;
         if(num == 0 || num== INT32_MAX || num == INT32_MIN){
             num=0;
             return 0;
@@ -30,16 +29,9 @@ public:
                 return 0;
             }
             rnum=rnum*10 + temp%10;
-            if(!first)
-                s1=temp%10;
             temp/=10;
         }
 
-        if(s1!=(rnum%10)){
-            cout<<"Overflow Occured while Reversing the number"<<endl;
-            num=0;
-            return 0;
-        }        
 
         if(num>0)
             num=rnum;
@@ -55,7 +47,7 @@ public:
 
 
 int main()
-{   int num = INT32_MAX;
+{   int num = -123;
     Solution obj(num);
     cout<<"Reverse Integer Program sizeof(INT)  = "<<sizeof(int)<<" "<<INT32_MAX<<" "<<INT32_MIN<<endl;
     obj.print();
