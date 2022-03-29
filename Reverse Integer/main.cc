@@ -10,17 +10,14 @@ public:
     }
     int reverse() {
         cout<<"Reversing the number"<<endl;
-        int temp,s1;   
+        int temp,s1,rnum=0;   
         bool first=false;
-
         if(num>0)
             temp=num;
         else if(num<0)
             temp=num * (-1);
         else if(num = 0)
             return 0;
-
-        int rnum=0;
         while(temp>0)
         {
             rnum=rnum*10 + temp%10;
