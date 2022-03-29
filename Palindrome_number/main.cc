@@ -10,5 +10,6 @@ public:
 
 int main()
 {
+    Solution
     cout<<"Welcome to checing the palindrome number"<<endl;
 }
