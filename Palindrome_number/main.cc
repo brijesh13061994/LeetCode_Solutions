@@ -14,6 +14,8 @@ class Solution {
         while(x)
         {
             digit=x%10;
+            if(rev> INT_MAX/10)
+                return 44;
             rev=rev*10 + digit;
             x/=10;
 
@@ -31,14 +33,14 @@ public:
  * @return false 
  */
     bool isPalindrome(int x) {
-        if (x<0) 
-            return false; // stupid condition for leetcode
+        if(x < 0 || (x % 10 == 0 && x != 0)) {
+            return false;
+        }                                // stupid condition for leetcode
 
         return 
             x==revNum(x);
     }
 };
-
 int main()
 {
     Solution obj;
