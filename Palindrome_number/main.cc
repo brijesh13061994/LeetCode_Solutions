@@ -2,6 +2,13 @@
 using namespace std;
 
 class Solution {
+    int getDigits(int x)
+    {
+        int count=0;
+        while(x){
+
+        }
+    }
 public:
     bool isPalindrome(int x) {
         
