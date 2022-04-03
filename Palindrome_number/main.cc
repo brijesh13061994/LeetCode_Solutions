@@ -18,6 +18,7 @@ class Solution {
             x/=10;
 
         }
+        cout<<"reversed number "<<rev<<endl;
         return rev;
     }
 public:
@@ -30,14 +31,18 @@ public:
  * @return false 
  */
     bool isPalindrome(int x) {
-        return x==revNum(x);
+        if (x<0) 
+            return false; // stupid condition for leetcode
+
+        return 
+            x==revNum(x);
     }
 };
 
 int main()
 {
     Solution obj;
-    cout<<"Welcome to checing the palindrome number "<<obj.isPalindrome(112211)<<endl;
+    cout<<"Welcome to checking the palindrome number "<<obj.isPalindrome(-121)<<endl;
     
     return 0;
 }
