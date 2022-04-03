@@ -9,8 +9,8 @@ Return the maximum amount of water a container can store.
 Notice that you may not slant the container.
 
 ## Example 1:
-![Source : LeetCode](https://s3-lc-upload.s3.amazonaws.com/uploads/2018/07/17/question_11.jpg=250x250)
-    
+<img src="https://s3-lc-upload.s3.amazonaws.com/uploads/2018/07/17/question_11.jpg" width="100" height="100">
+
     Input: height = [1,8,6,2,5,4,8,3,7]
     Output: 49
     Explanation: The above vertical lines are represented by array [1,8,6,2,5,4,8,3,7]. 
