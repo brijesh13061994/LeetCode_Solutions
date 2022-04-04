@@ -14,4 +14,5 @@ int main()
 {
     Solution obj;
     cout<<"Welcome to checking the *****"<<endl;
+    return 0;
 }
