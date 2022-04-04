@@ -175,12 +175,12 @@ public:
 int main()
 {
     Solution obj;
-    int num = 900;
+    int num = 1993;
     cout<<"Welcome to checking the Integer to roman conversion "<<num<<" \n ANS: "
-        <<obj.intToRoman(1994)<<endl<<"Expected MCMXCIV"<<endl;
+        <<obj.intToRoman(num)<<endl<<"Expected MCMXCIV"<<endl;
 
         cout<<"Welcome to checking the Integer to roman conversion optimized "<<num<<" \n ANS: "
-        <<obj.intToRomanOptimized(1994)<<endl<<"Expected MCMXCIV"<<endl;
+        <<obj.intToRomanOptimized(num)<<endl<<"Expected MCMXCIV"<<endl;
 
     return 0;
 }
