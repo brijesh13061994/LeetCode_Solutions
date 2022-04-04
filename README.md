@@ -1,4 +1,4 @@
-# LeetCode_Solutions
+# LeetCode Solutions
 To solve the questions yourself [CLICK HERE](https://leetcode.com/problemset/all/)
 
 My way of doing coding and learning Git on the fly
