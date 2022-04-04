@@ -1,4 +1,5 @@
 # LeetCode_Solutions
+To solve the questions yourself [CLICK HERE](https://leetcode.com/problemset/all/)
 My way of doing coding and learning Git on the fly
 1. [Reverse Integer](./Reverse%20Integer/)
 2. [String to Integer (atoi)](./String%20To%20Integer/)
