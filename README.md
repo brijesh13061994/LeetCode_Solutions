@@ -5,4 +5,4 @@ My way of doing coding and learning Git on the fly
 3. Palindrome Number
 4. Regular Expression Matching
 5. Container With Most Water
-6. [Palindrome Number](Palindrome_number/README.md)
+6. [Palindrome Number](Palindrome_number/)
