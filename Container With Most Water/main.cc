@@ -25,7 +25,25 @@ public:
 
             }
         }
-    return max_area;
+        return max_area;
+    }
+
+    int maxAreaOptimized(vector<int>& height) {
+        int n = height.size();
+        int i=0,j=n,area=0,max_area=0,h;
+        while(i<j)
+        {
+            area = (j-i) * min(height[i],height[j]);
+            
+            if(max_area<area)
+                max_area = area;
+
+            if(height[i]<=height[j])
+                i++;
+            else
+                j--;
+        }
+        return max_area;
     }
  
 };
@@ -35,5 +53,7 @@ int main()
     Solution obj;
     vector<int> vect{10,3,2,10};
     vector<int> vect1{1,8,6,2,5,4,8,3,7};
-    cout<<"Welcome to checking the maxArea "<<obj.maxArea(sample) <<endl;
+    cout<<"Welcome to checking the maxArea "<<sample.size()<<" "<<obj.maxArea(sample) <<endl;
+
+    cout<<"optimized maxArea "<<sample.size()<<" "<<obj.maxAreaOptimized(sample) <<endl;
 }
