@@ -15,7 +15,9 @@ public:
  */
     Solution(){
         ROMAN_NUMS.insert ( std::pair<int, string>(1,"I") );
+        ROMAN_NUMS.insert ( std::pair<int, string>(4,"IV") );
         ROMAN_NUMS.insert ( std::pair<int, string>(5,"V") );
+        ROMAN_NUMS.insert ( std::pair<int, string>(9,"IX") );
         ROMAN_NUMS.insert ( std::pair<int, string>(10,"X") );
         ROMAN_NUMS.insert ( std::pair<int, string>(50,"L") );
         ROMAN_NUMS.insert ( std::pair<int, string>(100,"C") );
@@ -53,13 +55,25 @@ public:
             }
             else if(num>=5 && num<10)
             {
+                if(num==9){
+                result.append(ROMAN_NUMS[9]);
+                num -= 9;
+                }
+                else{
                 result.append(ROMAN_NUMS[5]);
                 num -= 5;
+                }
             }
             else if(num>=1 && num<5)
             {
+                if(num==4){
+                result.append(ROMAN_NUMS[4]);
+                num -= 4;
+                }
+                else{
                 result.append(ROMAN_NUMS[1]);
                 num -= 1;
+                }
             }
         }
 
