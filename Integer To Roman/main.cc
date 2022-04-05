@@ -7,6 +7,7 @@ class Solution {
  * @brief 
  * 
  */
+
 map<int, string> ROMAN_NUMS;
 public:
 /**
@@ -169,7 +170,16 @@ public:
         }
         return result; 
     }
- 
+/**
+ * @brief convert Roman numbers to integers
+ * 
+ * @param s 
+ * @return int 
+ */
+    int romanToInt(string s) {
+        
+
+    }
 };
 
 int main()
