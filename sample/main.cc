@@ -7,12 +7,11 @@ class Solution {
  * 
  */
 public:
- 
 };
 
 int main()
 {
     Solution obj;
-    cout<<"Welcome to checking the *****"<<endl;
+    cout<<"Welcome to ***"<<endl;
     return 0;
 }
