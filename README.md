@@ -8,3 +8,4 @@ My way of doing coding and learning Git on the fly
 4. [Regular Expression Matching](./Regular%20Expression%20Matching/)
 5. [Container With Most Water](./Container%20With%20Most%20Water/)
 6. [Integer To Roman](./Integer%20To%20Roman/)
+7. [Longest Common Prefix](./Longest%20Common%20Prefix/)
