@@ -4,6 +4,7 @@ using namespace std;
 
 #define max(x,y) ((x>y)?x:y)
 #define min(x,y) ((x<y)?x:y)
+#define mod(x) ((x<0)?(x*-1):x)
 
 class Solution {
     int small,mid ,big;
@@ -13,14 +14,18 @@ class Solution {
     }
 void insertNonDuplicateElement(vector<vector<int>>& ans,vector<int>& nums)
 {
+    
     bool isRepeat=false;
     int i;
+    int sol=0,sol1=0;
     for(i=0;i<ans.size();i++)
     {
-        if (ans[i]==nums)
-        {
-            isRepeat=true;
-        }
+        // if (ans[i]==nums)
+        // {
+        //     isRepeat=true;
+        // }
+        sol=mod(ans[i][0])+mod(ans[i][1])+mod(ans[i][2]);
+        sol1=mod(nums[0])+mod(ans[1])+mod(ans[2]);
     }
     if(!isRepeat){
         ans.insert(ans.end(),nums);
