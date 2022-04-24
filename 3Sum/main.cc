@@ -54,7 +54,6 @@ public:
                     if(nums[i]+nums[j]+nums[k]==0)
                         {
                             order_init(nums[i],nums[j],nums[k]);
-
                             temp.insert(temp.begin(),small);
                             temp.insert(temp.begin()+1,mid);
                             temp.insert(temp.begin()+2,big);
