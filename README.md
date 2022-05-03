@@ -10,3 +10,4 @@ My way of doing coding and learning Git on the fly
 6. [Integer To Roman](./Integer%20To%20Roman/)
 7. [Longest Common Prefix](./Longest%20Common%20Prefix/)
 8. [3Sum](./3Sum/)
+9. [Rote Matrix](./Rotate%20matrix/)
